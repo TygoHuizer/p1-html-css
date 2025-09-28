@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+.header {
+  color: yellowgreen;
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 36px;
+}
+
+.parallax {
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  overflow: hidden;
+}
+
+.parallax-1 {
+  background-image: url("/img/wart.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+
+.parallax-2 {
+  background-image: url("/img/infraction.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #222;
+  height: 800px;
+}
+
+.content {
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  color: lightgray;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/ #demo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.button {
+  position: absolute;
+  top: 10px;
+  left: -900px;
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+.button:active {
+  background-color: #111;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(2px);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: -900px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 9px #999;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.navigation {
+  text-align: center;
+  margin-top: 20px;
+}

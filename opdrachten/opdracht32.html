@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="vnaam">Voornaam:</label>
+      <br />
+      <input type="text" name="vnaam" id="vnaam" pattern="[A-Za-z]" required />
+      <br />
+      <label for="anaam">Achternaam:</label>
+      <br />
+      <input type="text" name="anaam" id="anaam" pattern="[A-Za-z]" required />
+      <br />
+      <br />
+      <label for="ah">Aanhef:</label>
+      <br />
+      <input type="radio" id="dhr" name="radio" value="Dhr" checked />
+      <label for="dhr">Dhr</label>
+      <input type="radio" id="mevr" name="radio" value="Mevr" />
+      <label for="mevr">Mevr</label>
+      <input type="radio" id="An" name="radio" value="Anders" />
+      <label for="an">Anders</label>
+      <br />
+      <br />
+      <label for="straat">Straat met huisnummer:</label>
+      <br />
+      <input type="text" name="straat" id="straat" />
+      <br />
+      <label for="post">Postcode:</label>
+      <br />
+      <input type="text" name="post" id="post" />
+      <br />
+      <label for="wp">Woonplaats:</label>
+      <br />
+      <input type="text" name="wp" id="wp" />
+      <br />
+      <label for="land">Land:</label>
+      <br />
+      <input type="text" name="land" id="land" />
+      <br />
+      <label for="iban">IBAN-nummer:</label>
+      <br />
+      <input
+        type="text"
+        name="iban"
+        id="iban"
+        max="18"
+        pattern="^NL\d{2}[A-Z]{4}\d{10}$"
+        required
+      />
+      <br />
+      <label for="ta">Type abonnement:</label>
+      <br />
+      <input type="radio" id="Mobiel" name="ta" value="mobiel" checked />
+      <label for="dhr">mobiel</label>
+      <input type="radio" id="Glasvezel" name="ta" value="glasvezel" />
+      <label for="mevr">glasvezel</label>
+      <input type="radio" id="TV" name="ta" value="TV" />
+      <label for="an">TV</label>
+      <br />
+      <label for="datum">Datum van ingang:</label>
+      <br />
+      <input
+        type="date"
+        id="datum"
+        name="datum"
+        min="<?php echo date('Y-m-d'); ?>"
+      />
+      <br />
+      <label for="loop">Looptijd:</label>
+      <br />
+      <input type="text" name="loop" id="loop" />
+      <br>
+      <label for="gebruik">Aantal gebruikers:</label>
+      <br>
+      <input type="text" name="gebruik" id="gerbuik" pattern="[1-4]" required>
+      <br>
+      <label for="email">E-mailadres</label>
+      <br>
+      <input type="text" name="email" id="email">
+      <br>
+      <label for="password">Wachtwoord</label>
+      <br>
+      <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+      <br><br>
+      <button>Sluit abonnement af</button>
+    </form>
+  </body>
+</html>
