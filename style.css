@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: black;
+.body {
+  background-color: rgb(255, 230, 230);
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -67,7 +67,7 @@ body {
   line-height: 1.5;
 }
 
-/ #demo {
+#demo {
   font-size: 24px;
   font-weight: bold;
   margin-top: 20px;
@@ -138,7 +138,7 @@ body {
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   border: none;
   border-radius: 25px;
   box-shadow: 0 9px #999;
@@ -159,4 +159,35 @@ body {
 .navigation {
   text-align: center;
   margin-top: 20px;
+}
+
+.section-title {
+  font-size: 56px;
+  font-weight: 1000;
+  color: #9000ff;
+}
+.section-paragraph {
+  color: #0d0303;
+  font-size: 28px;
+}
+#eerste {
+  font-weight: 1000;
+}
+.link {
+  text-decoration: none;
+}
+.section-image {
+  width: 400px;
+  height: auto;
+  border-radius: 25%;
+}
+
+.section-image:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.section-image {
+  width: 400px;
+  height: auto;
+  border-radius: 25%;
 }
