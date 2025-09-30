@@ -191,3 +191,10 @@
   height: auto;
   border-radius: 25%;
 }
+@font-face {
+  font-family: "MyCustomFont";
+  src: url(/font/ftltlt-webfont.woff);
+}
+#body {
+  font-family: "MyCustomFont", sans-serif;
+}
