@@ -170,31 +170,4 @@
   color: #0d0303;
   font-size: 28px;
 }
-#eerste {
-  font-weight: 1000;
-}
-.link {
-  text-decoration: none;
-}
-.section-image {
-  width: 400px;
-  height: auto;
-  border-radius: 25%;
-}
 
-.section-image:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
-.section-image {
-  width: 400px;
-  height: auto;
-  border-radius: 25%;
-}
-@font-face {
-  font-family: "MyCustomFont";
-  src: url(/font/ftltlt-webfont.woff);
-}
-#body {
-  font-family: "MyCustomFont", sans-serif;
-}
